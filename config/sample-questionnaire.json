@@ -5,6 +5,10 @@
   "conceptUUID": "be5b3fce-71ec-4153-9172-afe6d04cc828",
   "questions": [
     {
+      "name": "Treatment",
+      "mandatory": true
+    },
+    {
       "name": "Multiple Choice Question 1"
     },
     {
