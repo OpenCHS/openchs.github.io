@@ -2,12 +2,16 @@
   "questionnaires": [
     "sample-questionnaire.json",
     "bmi.json",
-    "vhw-lokbiradari.json"
+    "vhw-lokbiradari.json",
+    "diabetes.json"
   ],
   "concepts": [
     "concepts.json",
     "sample-concepts.json"
   ],
-  "conclusions": [
+  "decisionConfig": [
+    "BMI.js",
+    "Sample without control flow.js",
+    "VHW_Lokbiradari.js"
   ]
 }
