@@ -1,8 +1,53 @@
 <html>
-<head>
-	<title>OpenCHS</title>
-</head>
-<body>
-	<h1>OpenCHS</h1>
-</body>
+    <head>
+        <meta charset='utf-8'/>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+        <meta name="description" content="OpenCHS is an open source community health system"/>
+
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+        <title>OpenCHS - Open Source Community Health System</title>
+    </head>
+    <body>
+        <div id="header_wrap" class="outer">
+            <header class="inner">
+                <h1 id="project_title">Open Source Community Health System</h1>
+            </header>
+        </div>
+
+        <div id="main_content_wrap" class="outer">
+            <section id="main_content" class="inner">
+                <h1>Our Goal</h1>
+                <p>OpenCHS aims to be a comprehensive community health platform designed to empower health workers with supportive supervision of the clinicians.
+                It is being developed in collaboration with practitioners working in the field with large experience in community medicine.</p>
+                <p>OpenCHS team started work on it in the second half of 2016. The first feature being developed is a decision support platform customisable for
+                    the health workers in the field.</p>
+
+                <h2>Key Technologies</h2>
+                <h4>Mobile</h4>
+                <p>Even though web view kind of interface on mobile have come a long way they still do not match native app experience, especially on low end devices in trying
+                    conditions. We chose React Native because it is easy to learn, speeds up development cycle and will allow us to peform play store less upgrade.</p>
+                <p>We are using Realm as our offline database.</p>
+
+                <h4>Infrastructure</h4>
+                <p>We are managing our infrastructure using docker (honestly, most of work right now has been on mobile side)</p>
+
+                <h2>Source Code</h2>
+                <p>OpenCHS Client, OpenCHS Server can be found on <a href="https://github.com/openchs">Github</a></p>
+
+                <h2>Team</h2>
+                <p>The founding members & developers on Bahmni (the open source hospital system) have started this effort. We are very keen to involve the community in
+                    development and implementation of OpenCHS. Currently we are in the process of setting up necessary infrastructure so that we can involve the community.</p>
+
+                <h2>Some of the high level features planned</h2>
+                <ul>
+                    <li>Decision Support Platform</li>
+                    <li>Individual and household registration</li>
+                    <li>Followup visit tracking</li>
+                    <li>Supportive supervision</li>
+                    <li>Integration with DHIS 2 and OpenMRS</li>
+                </ul>
+            </section>
+        </div>
+    </body>
 </html>
