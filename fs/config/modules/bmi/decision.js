@@ -1,4 +1,4 @@
-var getDecision = function (questionnaireAnswers) {
+var getDecision  = function (questionnaireAnswers) {
     var decision = {};
     decision.name = "BMI";
     decision.code = "N/A";
@@ -10,3 +10,5 @@ var getDecision = function (questionnaireAnswers) {
 
     return [decision];
 };
+
+module.exports = getDecision;
