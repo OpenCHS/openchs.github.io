@@ -9,7 +9,7 @@
       }
     ],
     "datatype": {
-      "name": "N/A"
+      "name": "N/AN"
     }
   },
   {
@@ -60,7 +60,7 @@
       }
     ],
     "datatype": {
-      "name": "Duration"
+      "name": "Numeric"
     },
     "lowAbsolute": 1,
     "hiAbsolute": 120
