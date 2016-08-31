@@ -81,7 +81,7 @@
       }
     ],
     "datatype": {
-      "name": "Duration"
+      "name": "Numeric"
     },
     "lowAbsolute": 0,
     "hiAbsolute": 130
