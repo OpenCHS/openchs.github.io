@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OpenCHS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    
+    
+    .no-container 
+    {
+        margin-left: 0 !important;
+        margin-right: 0 !important; 
+    }
+   
+
+    body 
+    {
+          background-color:rgb(0, 148, 148);
+          overflow-x: hidden ;
+         
+        
+         
+    }
+         
+
+      
+    .index-banner 
+    {
+            width: 100%;
+            text-align: center;
+            height: 250px;
+            background-image: url('Untitled-1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: #000;
+            padding-top: 50px;
+            display: table;
+
+    }
+    
+
+    .index-banner h1 
+    {
+            font-family: Myraid Pro;
+            font-size:20px;
+            color: #fff;
+            font-weight: 900;
+            text-align: center;
+            text-shadow: 2px 2px 8px #111;
+    }
+
+    .button 
+    {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #8B4513;
+            border: none;
+            border-radius: 15px;
+
+    }
+  
+    .button:hover 
+    {
+            background-color: #8B4513
+    }
+  
+    .button:active 
+    {
+          background-color: #8B4513;
+         
+          transform: translateY(4px);
+    }
+
+    .navbar
+    {
+          background-color: #005d67;
+          width: 100%;
+          height: 100px;
+    }
+
+    .navbar .navbar-brand 
+    {
+            position:absolute;
+            font-family: Myraid Pro;
+            font-size: 15px;
+            font-weight: 900;
+            color: #f3f3f3;
+            display: block;
+            margin: 60px 0px;
+            text-align: left;
+            padding: 0px 20px 0px 20px;
+            float: left;
+            top:12px;
+    }
+
+    .header1 img 
+    {
+            position:absolute;
+            float: none;
+            width: 65px;
+            height: 65px;
+            background: #555;
+            top:10px;
+            left:20px;
+            
+    }
+
+    .header1 h1
+    {
+           position: relative;
+           top: 18px;
+           left: 10px;
+    }
+       
+      
+       
+    .navbar .collapse .nav li a 
+    {
+            font-family: Myraid Pro;
+            font-size: 16px;
+            font-weight: 900;
+            color: #f3f3f3;
+            display: inline-block;
+            list-style: none;
+            margin-top: 20px;
+            margin-right: 20px;  
+          
+
+
+    }
+       
+
+
+    .navbar-toggle
+    {
+          
+            background-color: #005d67 !important;
+    }
+
+                         @media only screen and (min-width: 1000px) 
+                            {
+                                        .wrapper 
+                                        {
+                                                width: 1000px;
+                                                margin: 0 auto;
+                                                background-color: white;
+                                                margin-top:-20px;
+                                                margin-bottom:-20px;
+                
+                                        }
+                                        .imgsetting1 
+                                        { 
+        
+                                                margin-left:45px !important;
+                                              
+          
+           
+                                        }
+                                       
+                                        .imgsetting3
+                                        {
+        
+                                                width: 210px !important;
+                                                height: 200px !important;
+                                                margin-left: 25% !important;
+                                                 
+                                                
+                                        } 
+                                        .imgsetting4
+                                        {
+                                                position:absolute;
+                                                margin-left: 35% !important;
+                                                top:10px;
+                                                bottom:50px;
+                                                z-index: 1;
+                                                border: 2px solid #005d67;
+                                                padding: 10px;
+                                                border-radius: 50px;
+          
+                                        }
+                                        .imgsetting5
+                                        {
+                                                position:absolute;
+                                                margin-left: 23% !important;
+                                                top:75px;
+                                                bottom:175px;
+                                                 margin-bottom: 100px;
+                                        }
+                                        .index-banner h1 
+                                        {
+           
+                                                font-size:36px !important;
+        
+                                        }
+                                        .footer-sm img 
+                                        {
+                                                margin-top: 25px;
+                                                width: 70% !important;
+                                                margin-bottom: 2px !important;
+                                        }
+                                        .aboutochs 
+                                        {
+                                                padding:20px;
+            
+                                        }
+                                        .imgsetting6{
+                                            margin-left:200px !important;
+                                            
+
+                                        }
+                            }
+.imgsetting6{
+                            width: 200px;
+                            
+            height: 200px;
+            border-radius: 50%;
+            color: white;  
+            background: #005d67;
+            font-family: Myraid Pro;
+            font-size: 25px;
+            margin-left: 23%;
+            font-weight: 600;
+            text-align: center;
+            text-shadow: 2px 2px 8px #111;
+
+            
+}
+        
+                            
+.imgsetting1 
+{ 
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            color: white;  
+            background: #005d67;
+            font-family: Myraid Pro;
+            font-size: 25px;
+            margin-left: 23%;
+            font-weight: 600;
+            text-align: center;
+            text-shadow: 2px 2px 8px #111;
+           
+}
+
+.aboutochs 
+{
+            font-family: Myraid Pro;
+            font-size: 18px;
+            color: #000;
+            font-weight: 500;
+            text-align: center;
+}
+.imgsetting3
+{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            color: white;  
+            background: #005d67;
+            font-family: Myraid Pro;
+            font-size: 25px;
+            line-height: 100px;
+            font-weight: 600;
+            text-align: center;
+            text-shadow: 2px 2px 8px #111;
+            margin-left: 23%;
+}
+.imgsetting4
+{
+            width: 100px;
+            height:100px;
+            border-radius: 50%;
+            color: black;  
+            background: white;
+            font-family: Myraid Pro;
+            font-size: 25px;
+            margin-left: 25%;
+            font-weight: 600;
+            text-align: center;
+           
+           
+           
+}
+.imgsetting5
+{
+            width: 200px;
+            height:150px;
+            border-radius: 5%;
+            color: black;  
+            background: white;
+            font-family:Myraid Pro;
+            font-size: 25px;
+            margin-left: 8%;
+            font-weight: 600;
+            text-align: center;
+         
+            
+           
+
+}       
+        
+footer 
+{
+            width: calc(100%-80px);
+            padding: 40px 40px;
+            background-color: #005d67;
+            margin-top: 20px;
+            overflow: hidden;
+}
+
+        
+
+.footer-sm 
+{
+
+            width: 50px;
+            margin-bottom: right;
+}
+
+.footer-sm img 
+{
+
+            width: 100%;
+            margin-bottom: 10px;
+}
+
+
+.footer-bottom
+{
+            width: calc(100%-80px);
+            margin-right: auto;
+            background:#000;
+            padding:2px;
+
+}
+.footer-bottom
+{
+            font-family: arial;
+            font-size:14px;
+            text-align: center;
+            color:#f3f3f3;
+}
+h5
+{
+     
+            font-family: Myraid Pro;
+            font-size: 30px;
+            color: #fff;
+            font-weight: 900;
+            text-align: center;
+            text-shadow: 2px 2px 8px #111;
+}
+    
+
+.collapse .nav
+{
+            background-color:#005d67;
+}
+h6
+{
+    
+           
+            font-size: 20px;
+            text-align: center;
+}
+ 
+ .wrapper-1{
+     background-color:#fff;
+
+ }
+ a {
+    color: rgb(0, 148, 148);
+  
+}
+a:hover {
+    color: rgb(0, 148, 148);
+}
+.anchor {
+    color: white;
+  
+}
+.anchor:hover {
+    color: white;
+}
+
+
+
+
+
+</style>
+
+</head>
+<body >
+
+<div class="wrapper-1">
+<div class="index-banner">
+        
+            <h1> Promoting the idea of task shifting utilizing an open soursce platform<br> to minimize the inequalities in
+                health care services.
+            </h1>
+            <br>
+                <button class="button">Request for demo</button>
+</div>
+
+<nav class="navbar navbar-inverse" >
+    <div class="container-fluid">
+          <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                        </button>
+        <div class="header1">
+            <img src="openchs_logo.png" alt="logo"  />
+          <a class="navbar-brand" href="#">OpenCHS</a>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse text-center" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                  <li ><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">How it works?</a></li>
+                  <li><a href="#">Customers</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Contact Us</a></li>
+            </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="wrapper">
+        <div class="aboutochs">
+                <h1>About OpenCHS</h1>
+                <p> Open Community Health System (OpenCHS) is an initiative of Samanvay Foundation. OpenCHS is a platform used by
+                    community health workers to keep track of the beneficiaries’ health records. We provide customized technological
+                    support to organizations which can be used during screening, follow-up care and surveys. Our services also
+                    include provision of health modules as per India’s national and WHO health guidelines. We have previously
+                    developed maternal, child and outpatient modules. Currently, we are working on adolescent continuum care.
+                    Our customized app can be used by any primary health worker through any android device. </p>
+                <div class="line"></div>
+                <br><br>
+                <hr style="border-color:#005d67 ;" width="90%">
+            </div>
+            <div class="aboutochs">
+                    <h1>Aim</h1>
+                    <p> OpenCHS aims to be a comprehensive community health platform designed to empower health workers with supportive
+                        supervision of the clinicians. It is being developed in collaboration with practitioners working in the field
+                        with large experience in community medicine.</p>
+                    <div class="line"></div>
+                    <br><br>
+                    <hr style="border-color:#005d67 ;" width="90%">
+                </div>
+                <div class="aboutochs">
+                        <h1>How it works?</h1>
+                        <div class="line"></div>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <hr style="border-color:#005d67 ;" width="90%">
+                    </div>
+
+
+<section class="health-module  text-center">
+  <h1>Health Modules</h1>
+  <br>
+
+  <div class="row no-container">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+          <div class="imgsetting1 d-block m-auto">
+              <h2>
+                <br>Mother <br>Reproductive <br>Health
+              </h2>
+
+
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+            <div class="imgsetting1 d-block m-auto">
+                <h2>
+                    <br>Child <br>Immunization
+                  </h2>
+  
+  
+            </div>
+  
+  
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+              <div class="imgsetting1 d-block m-auto">
+                  <h2>
+                    <br>Child <br>Growth<br>Monitoring
+                  </h2>
+    
+    
+              </div>
+    
+    
+            </div>
+    </div>
+    
+    
+
+
+   
+
+    
+    
+</section>
+<section class="health-module  text-center">
+   
+   
+  
+    <div class="row no-container">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+            <div class="imgsetting1 d-block m-auto">
+                <h2>
+                  <br><br>Adolescent<br>Care
+                </h2>
+  
+  
+            </div>
+  
+  
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+              <div class="imgsetting1 d-block m-auto">
+                  <h2>
+                      <br>Non<br>Communicable<br>disease<br>Screening
+                    </h2>
+    
+    
+              </div>
+    
+    
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                <div class="imgsetting1 d-block m-auto">
+                    <h2>
+                      <br><br>Outpatient
+                    </h2>
+      
+      
+                </div>
+      
+      
+              </div>
+      </div>
+
+
+      <hr style="border-color:#005d67 ;" width="90%">
+      <section >
+        <h1>Customers</h1>
+        <br>
+      
+        <div class="row no-container">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                  <br>
+                <div class="imgsetting6 d-block m-auto">
+                    <p><a href="http://www.lokbiradariprakalp.org" class="anchor"><br><br>Lok Biradari Prakalp</a>
+                    </p>
+      
+      
+                </div>
+      
+      
+              </div>
+              <br>
+              
+              
+              <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                  <div class="imgsetting6 d-block m-auto">
+                    <p><a href="http://www.tatatrusts.org/" class="anchor"><br><br>Tata Trust</a>
+                    </p>
+        
+        
+                  </div>
+        
+        
+                </div>
+               
+          </div>
+          
+          
+          
+      
+      
+         
+      
+          
+          
+      </section>
+      <br>
+      <br>
+
+      <section >
+         
+         
+        
+          <div class="row no-container">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                    <br>
+                  <div class="imgsetting6 d-block m-auto">
+                    <p><a href="http://sewarural.org" class="anchor"><br><br>Sewa Rural</a></p>
+        
+        
+                  </div>
+        
+        
+                </div>
+                <br>
+
+               
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                    <div class="imgsetting6 d-block m-auto">
+                       <p><a href="http://ashwini.org/new/" class="anchor"><br><br>Ashwini</a></p>
+          
+          
+                    </div>
+          
+          
+                  </div>
+                  
+            </div>
+      
+      
+  
+  
+     
+  
+      <hr style="border-color:#005d67 ;" width="90%">
+      
+  </section>
+
+
+
+
+
+
+   
+<section>
+        <div class="aboutochs">
+                <h1>Testimonial</h1>
+                <div class="line"></div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    
+                <hr style="border-color:#005d67 ;" width="90%">
+    
+            </div>
+            
+</section>
+<section>
+        <div class="aboutochs">
+                <h1>Teams</h1>
+                <div class="line"></div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    
+                <hr style="border-color:#005d67 ;" width="90%">
+    
+            </div>
+</section>
+</div>
+<footer>
+    <section class="help text-center">
+            <h5>How we can help you?</h5>
+          
+            <div class="row no-container">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                    <div class="imgsetting4 d-block m-auto">
+                        <h6>
+                              Demo<br>
+                        </h6>
+          
+          
+                    </div>
+          
+          
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                      <div class="imgsetting4 d-block m-auto">
+                          <h6>
+                            Connect<br>With<br>Us
+                            </h6>
+            
+            
+                      </div>
+            
+            
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                        <div class="imgsetting4 d-block m-auto">
+                            <h6>
+                              Contact<br>Us<br>
+                            </h6>
+              
+              
+                        </div>
+              
+              
+                      </div>
+              </div>
+
+              <div class="row no-container">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                      <div class="imgsetting5 d-block m-auto">
+                          <h3>
+                               <br> Click <a href="#"> here </a>to ask for demo
+                          </h3>
+            
+            
+                      </div>
+            
+            
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                        <div class="imgsetting5 d-block m-auto">
+                            <h3>
+                                    <div class="footer-sm">
+                                            <a href="https://www.facebook.com/openchs/"> 
+                                                         <img src="facebook (2).png" >
+                                                     </a>
+                                                     
+                                                     <a href="https://www.linkedin.com/company/openchs/"> 
+                                                            <img src="linkedin.png">
+                                                        </a>
+                                           
+                                        </div>
+                              
+                              </h3>
+              
+              
+                        </div>
+              
+              
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                          <div class="imgsetting5 d-block m-auto">
+                              <h3>
+                                  <div class="footer-sm">
+                                    <a href="#"> 
+                                            <img src="call-answer.png">
+                                        </a>
+                            <a href="#"> 
+                                                <img src="close-envelope.png">
+                                            </a>
+                                  </div>
+                                
+                              </h3>
+                
+                
+                          </div>
+                
+                
+                        </div>
+                </div>
+          </section>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+    
+
+
+</footer>
+    <div class="footer-bottom">
+            <p>Copyrights © Samanvay Foundation</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
