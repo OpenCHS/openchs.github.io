@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OpenCHS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    
+    
+    .no-container 
+    {
+        margin-left: 0 !important;
+        margin-right: 0 !important; 
+    }
+   
+
+    body 
+    {
+          background-color:rgb(0, 148, 148);
+          overflow-x: hidden ;
+         
+        
+         
+    }
+         
+
+      
+    .index-banner 
+    {
+            width: 100%;
+            text-align: center;
+            height: 250px;
+            background-image: url('Untitled-1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: #000;
+            padding-top: 50px;
+            display: table;
+
+    }
+    
+
+    .index-banner h1 
+    {
+            font-family: Myraid Pro;
+            font-size:20px;
+            color: #fff;
+            font-weight: 900;
+            text-align: center;
+            text-shadow: 2px 2px 8px #111;
+    }
+
+    .button 
+    {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #8B4513;
+            border: none;
+            border-radius: 15px;
+
+    }
+  
+    .button:hover 
+    {
+            background-color: #8B4513
+    }
+  
+    .button:active 
+    {
+          background-color: #8B4513;
+         
+          transform: translateY(4px);
+    }
+
+    .navbar
+    {
+          background-color: #005d67;
+          width: 100%;
+          height: 100px;
+    }
+
+    .navbar .navbar-brand 
+    {
+            position:absolute;
+            font-family: Myraid Pro;
+            font-size: 15px;
+            font-weight: 900;
+            color: #f3f3f3;
+            display: block;
+            margin: 60px 0px;
+            text-align: left;
+            padding: 0px 20px 0px 20px;
+            float: left;
+            top:12px;
+    }
+
+    .header1 img 
+    {
+            position:absolute;
+            float: none;
+            width: 65px;
+            height: 65px;
+            background: #555;
+            top:10px;
+            left:20px;
+            
+    }
+
+    .header1 h1
+    {
+           position: relative;
+           top: 18px;
+           left: 10px;
+    }
+       
+      
+       
+    .navbar .collapse .nav li a 
+    {
+            font-family: Myraid Pro;
+            font-size: 16px;
+            font-weight: 900;
+            color: #f3f3f3;
+            display: inline-block;
+            list-style: none;
+            margin-top: 20px;
+            margin-right: 20px;  
+          
+
+
+    }
+       
+
+
+    .navbar-toggle
+    {
+          
+            background-color: #005d67 !important;
+    }
+
+                         @media only screen and (min-width: 1000px) 
+                            {
+                                        .wrapper 
+                                        {
+                                                width: 1000px;
+                                                margin: 0 auto;
+                                                background-color: white;
+                                                margin-top:-20px;
+                                                margin-bottom:-20px;
+                
+                                        }
+                                        
+                                        .imgsetting4
+                                        {
+                                                position:absolute;
+                                                margin-left: 35% !important;
+                                                top:10px;
+                                                bottom:50px;
+                                                z-index: 1;
+                                                border: 2px solid #005d67;
+                                                padding: 10px;
+                                                border-radius: 50px;
+          
+                                        }
+                                        .imgsetting5
+                                        {
+                                                position:absolute;
+                                                margin-left: 23% !important;
+                                                top:75px;
+                                                bottom:175px;
+                                                 margin-bottom: 100px;
+                                        }
+                                        .index-banner h1 
+                                        {
+           
+                                                font-size:36px !important;
+        
+                                        }
+                                        .footer-sm img 
+                                        {
+                                                margin-top: 25px;
+                                                width: 70% !important;
+                                                margin-bottom: 2px !important;
+                                        }
+                                        .Demo
+                                        {
+                                                padding:20px;
+            
+                                        }
+                                        
+                                        .footer-sm1 
+                                        {
+                                                   
+                                                    margin-left: 250px;
+                                                    width: 50px;
+                                                    margin-bottom: right;
+                                                   
+                                        }
+                                        .footer-sm2 
+                                        {
+                                                    margin-left: 50px;
+                                                    width: 50px;
+                                                    margin-bottom: right;
+
+           
+                                        }
+                                        .Demo .section
+                                        {
+                                                                margin-left:100px;
+                                        }
+                                        .Demo .section1
+                                        {
+                                                                margin-left:55px;
+                                        }
+                                        .Demo .section3
+                                        {
+                                                                margin-left:50px;
+                                        }
+
+
+
+                            }
+.aboutochs 
+{
+            font-family: Myraid Pro;
+            font-size: 18px;
+            color: #000;
+            font-weight: 500;
+            text-align: center;
+}
+
+.imgsetting4
+{
+            width: 100px;
+            height:100px;
+            border-radius: 50%;
+            color: black;  
+            background: white;
+            font-family: Myraid Pro;
+            font-size: 25px;
+            margin-left: 25%;
+            font-weight: 600;
+            text-align: center;
+           
+           
+           
+}
+.imgsetting5
+{
+            width: 200px;
+            height:150px;
+            border-radius: 5%;
+            color: black;  
+            background: white;
+            font-family:Myraid Pro;
+            font-size: 25px;
+            margin-left: 8%;
+            font-weight: 600;
+            text-align: center;
+         
+            
+           
+
+}       
+
+h5
+{
+     
+            font-family: Myraid Pro;
+            font-size: 30px;
+            color: #fff;
+            font-weight: 900;
+            text-align: center;
+            text-shadow: 2px 2px 8px #111;
+}
+    
+
+.collapse .nav
+{
+            background-color:#005d67;
+}
+h6
+{
+    
+           
+            font-size: 20px;
+            text-align: center;
+}
+ 
+ .wrapper-1{
+     background-color:#fff;
+
+ }
+ a {
+    color: rgb(0, 148, 148);
+  
+}
+a:hover {
+    color: rgb(0, 148, 148);
+}
+.anchor {
+    color: white;
+  
+}
+.anchor:hover {
+    color: white;
+}
+
+.Demo{
+    font-family: Myraid Pro;
+            font-size: 18px;
+            color: #000;
+            font-weight: 500;
+            text-align: center;
+
+}
+        
+footer 
+{
+            width: calc(100%-80px);
+            padding: 40px 40px;
+            background-color: #005d67;
+            margin-top: 20px;
+            overflow: hidden;
+}
+
+        
+
+.footer-sm 
+{
+
+            width: 50px;
+            margin-bottom: right;
+}
+
+.footer-sm img 
+{
+
+            width: 100%;
+            margin-bottom: 10px;
+}
+
+
+.footer-bottom
+{
+            width: calc(100%-80px);
+            margin-right: auto;
+            background:#000;
+            padding:2px;
+
+}
+.footer-bottom
+{
+            font-family: arial;
+            font-size:14px;
+            text-align: center;
+            color:#f3f3f3;
+}
+.footer-sm1 
+{
+            margin-left: 120px;
+            width: 50px;
+            margin-bottom: right;
+           
+}
+
+.footer-sm1 img 
+{
+            width: 100%;
+            margin-bottom: 10px;
+}
+h2{
+    font-size:25px;
+}
+.footer-sm2 
+{
+            margin-left: 40px;
+            width: 50px;
+            margin-bottom: right;
+                                                    
+}
+.footer-sm2 img 
+{
+            width: 250px;
+            height:100px;
+
+}
+
+
+
+
+
+</style>
+
+</head>
+<body >
+
+<div class="wrapper-1">
+<div class="index-banner">
+        
+            <h1> Promoting the idea of task shifting utilizing an open soursce platform<br> to minimize the inequalities in
+                health care services.
+            </h1>
+            <br>
+           
+            <a href="Readme.html"><button class="button">Request for demo</button></a>
+            
+         
+</div>
+
+<nav class="navbar navbar-inverse" >
+    <div class="container-fluid">
+          <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                        </button>
+        <div class="header1">
+            <img src="openchs_logo.png" alt="logo"  />
+          <a class="navbar-brand" href="#">OpenCHS</a>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse text-center" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                  <li ><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">How it works?</a></li>
+                  <li><a href="#">Customers</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Contact Us</a></li>
+            </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="wrapper">
+           
+
+<div class="Demo">
+        <h1>Demo</h1><br><br><br>
+                <hr style="border-color:#005d67 ;" width="90%"><br>
+                        <h1>Download Application</h1><br>
+                                <section class="section">
+                                                <div class="row no-container">
+                                                        <div class="col-lg-6 d-block m-auto">
+
+                                                                <h2>
+                                                                        <div class="footer-sm2 d-block m-auto">
+                                                                                <a href="https://play.google.com/store/apps/details?id=com.openchsclient&hl=en"> 
+                                                                                        <img src="google-play-badge.png">
+                                                                                </a>
+        
+                                                                        </div>
+                                                                </h2>
+
+
+
+
+
+                                                        </div>
+                                                                                                                <br>
+                                        
+                                                        <div class="col-lg-6 d-block m-auto">
+                                                                
+                                                                <h3>
+                                                                        <div class="footer-sm2 d-block m-auto">
+                                                                                <a href="https://play.google.com/store/apps/details?id=com.openchsclient&hl=en">Download</a>
+                                                                        </div>
+                                                                </h3>
+
+
+                                                        </div>
+
+
+                                                </div> 
+                                        </section>
+                                                                                                                <br>
+
+</div>
+
+<hr style="border-color:#005d67 ;" width="90%"><br>
+<div class="Demo">
+                <h1>Login Details/Information</h1><br>
+                <section class="section3">
+                                        <div class="row no-container">
+                                                        <div class="col-lg-6 d-block m-auto">
+
+                                                                <h2>
+                                                                        <div class="footer-sm1 d-block m-auto">
+                                                                               
+                                                                                UserId:-
+                                                                        </div>
+                                                                </h2>
+                                                        </div>
+                                       
+                                                        <div class="col-lg-6 d-block m-auto">
+                                                        
+                                                                <h2>
+                                                                        <div class="footer-sm1 d-block m-auto">Demo</div>
+                                                                </h2>
+                                                        </div>
+
+
+                                        </div> 
+                      
+
+
+                                        <div class="row no-container">
+                                                        <div class="col-lg-6 d-block m-auto">
+                                                                <h2>
+                                                                        <div class="footer-sm1 d-block m-auto">
+                                                                                Password:-
+                                                                        </div>
+                                                                </h2>
+                                                        </div>
+                                                        <div class="col-lg-6 d-block m-auto">
+                                                                <h2>
+                                                                        <div class="footer-sm1 d-block m-auto">password</div>
+                                                                 </h2>
+
+
+                                                        </div>
+
+
+                                        </div>
+                        
+                </section>
+                <hr style="border-color:#005d67 ;" width="90%">
+</div>
+        
+
+                <div class="Demo">
+                        <h1>Additional Information</h1><br>
+                        <section class="section">
+
+                                <div class="row no-container">
+                                        <div class="col-lg-6 d-block m-auto">
+  
+                                                <h2>
+                                                        <div class="footer-sm1 d-block m-auto">
+                                                                <a href="https://openchs.readme.io/docs/user-manual"> 
+                                                                        <img src="text_x_readme.png">
+                                                                </a>
+                                                        </div>
+                                                </h2>
+
+
+                                        </div>
+                                
+                                        <div class="col-lg-6 d-block m-auto">
+                                       
+                                                <h2>
+                                                        <div class="footer-sm2 d-block m-auto">
+                                                        <a href="https://openchs.readme.io/docs/user-manual">Documentation</a>
+                                                        </div>
+                                                </h2>
+
+
+                                        </div>
+
+
+                                </div>
+
+
+
+                                <div class="row no-container">
+                                        <div class="col-lg-6 d-block m-auto">
+          
+                                                <h2>
+                                                         <div class="footer-sm1 d-block m-auto">
+                                                                <a href="https://drive.google.com/file/d/189o4DHiGqdAfeWRCvA1jhGnAL7eLRqvN/view?usp=sharing"> 
+                                                                <img src="if__catalogue_80944.png">
+                                                                </a>
+                                                          </div>
+                                                </h2>
+        
+        
+                                        </div>
+
+                                        <div class="col-lg-6 d-block m-auto">
+                            
+                                                <h2>
+                                                         <div class="footer-sm2 d-block m-auto">
+                                                         <a href="https://drive.google.com/file/d/189o4DHiGqdAfeWRCvA1jhGnAL7eLRqvN/view?usp=sharing">Catalogue</a>
+                                                 </h2>
+        
+        
+                                        </div>
+                                </div>
+                         </section>
+                </div>
+
+                <hr style="border-color:#005d67 ;" width="90%"><br>
+
+                <div class="Demo">
+                                <h1>Contact Us</h1><br>
+                                <section class="section1">
+                                                        <div class="row no-container">
+                                                                        <div class="col-lg-6 d-block m-auto">
+        
+                                                                                <h2>
+                                                                                        <div class="footer-sm1 d-block m-auto">
+                                                                                                <a href="#"> 
+                                                                                                        <img src="call-answer.png">
+                                                                                                </a>
+                
+                                                                                        </div>
+                                                                                </h2>
+                                                                        </div>
+                                                       
+                                                                        <div class="col-lg-6     d-block m-auto">
+                                                                        
+                                                                                <h2>
+                                                                                        <div class="footer-sm1 d-block m-auto">7095499949</div>
+                                                                                </h2>
+                                                                        </div>
+
+
+                                                        </div> 
+                                      
+
+
+                                                        <div class="row no-container">
+                                                                        <div class="col-lg-6 d-block m-auto">
+                                                                                <h2>
+                                                                                        <div class="footer-sm1 d-block m-auto">
+                                                                                                <a href="#"> 
+                                                                                                        <img src="close-envelope.png">
+                                                                                                </a>
+                                                                                        </div>
+                                                                                </h2>
+                                                                        </div>
+                                                                        <div class="col-lg-6 d-block m-auto">
+                                                                                <h2>
+                                                                                        <div class="footer-sm1 d-block m-auto">xyz@gmail.com</div>
+                                                                                 </h2>
+  
+  
+                                                                        </div>
+  
+  
+                                                        </div>
+                                        
+                                </section>
+                                <hr style="border-color:#005d67 ;" width="90%">
+                </div>
+            
+        
+</div>
+<footer>
+    <section class="help text-center">
+            <h5>How we can help you?</h5>
+          
+            <div class="row no-container">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                    <div class="imgsetting4 d-block m-auto">
+                        <h6>
+                              Demo<br>
+                        </h6>
+          
+          
+                    </div>
+          
+          
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                      <div class="imgsetting4 d-block m-auto">
+                          <h6>
+                            Connect<br>With<br>Us
+                            </h6>
+            
+            
+                      </div>
+            
+            
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                        <div class="imgsetting4 d-block m-auto">
+                            <h6>
+                              Contact<br>Us<br>
+                            </h6>
+              
+              
+                        </div>
+              
+              
+                      </div>
+              </div>
+
+              <div class="row no-container">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                      <div class="imgsetting5 d-block m-auto">
+                          <h3>
+                                <br> Click <a href="#"> here </a>to ask for demo
+                          </h3>
+            
+            
+                      </div>
+            
+            
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                        <div class="imgsetting5 d-block m-auto">
+                            <h3>
+                                    <div class="footer-sm">
+                                            <a href="https://www.facebook.com/openchs/"> 
+                                                         <img src="facebook (2).png" >
+                                                     </a>
+                                                     
+                                                     <a href="https://www.linkedin.com/company/openchs/"> 
+                                                            <img src="linkedin.png">
+                                                        </a>
+                                           
+                                        </div>
+                              
+                              </h3>
+              
+              
+                        </div>
+              
+              
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                          <div class="imgsetting5 d-block m-auto">
+                              <h3>
+                                  <div class="footer-sm">
+                                    <a href="#"> 
+                                            <img src="call-answer.png">
+                                        </a>
+                            <a href="#"> 
+                                                <img src="close-envelope.png">
+                                            </a>
+                                  </div>
+                                
+                              </h3>
+                
+                
+                          </div>
+                
+                
+                        </div>
+                </div>
+          </section>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+    
+
+
+</footer>
+    <div class="footer-bottom">
+            <p>Copyrights © Samanvay Foundation</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
