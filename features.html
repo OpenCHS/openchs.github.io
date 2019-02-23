@@ -1,61 +1,101 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	    <meta charset='utf-8'/>
-	    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
-	    <meta name="description" content="OpenCHS is an open source community health system"/>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+    <meta name="description" content="List of features current present in OpenCHS and roadmap for significant new features to be added to the platform."/>
 
-	    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-		<title>OpenCHS - Features</title>
-	</head>
-	<body>
-        <div id="header_wrap" class="outer">
-            <header class="inner">
-                <h1 id="project_title">OpenCHS Features</h1>
-            </header>
-        </div>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>OpenCHS - Features</title>
+</head>
+<body>
+<div id="header_wrap" class="outer">
+    <header class="inner">
+        <p><a href="./index.html"><img src="images/openchs-logo.png" alt="OpenCHS" height="100" width="100"/></a></p>
+        <h1 id="project_title">OpenCHS - Features and roadmap</h1>
+    </header>
+</div>
 
-        <div id="main_content_wrap" class="outer">
-           <section id="main_content" class="inner">
-           <p>This is a current list of features that are available in OpenCHS. We update the system frequently. A detailed <a href="https://openchs.mingle.thoughtworks.com/projects/openchs"> roadmap here</a>. </p>Alternatively, download the <a href="https://play.google.com/store/apps/details?id=com.openchsclient&hl=en">Android app</a> from the <a href="https://play.google.com/store/apps/details?id=com.openchsclient&hl=en">playstore</a> and try it out yourself.
-				<h1> Platform features for field workers (android device) </h1>
-				<ul>
-					<li>Individual search and registration </li>
-					<li>Enrolment (and exit) of individuals into health programs </li>
-					<li>Capture visit details for for individuals in the program </li>
-					<li>Dashboards for health worker to manage their upcoming, due and missed visits</li>
-					<li>Automated generation of visit schedule on enrolment and visit completion</li>
-					<li>Smart forms for enrolment, registration and visits - based on individual's health record</li>
-					<li>View complete health record of an individual</li>
-					<li>Support for visualising individual health information in form of graphs</li>
-				</ul>
-				<h1>Health modules for field worker based on the platform</h1>
-				<h4>Mother reproductive health</h4>
-				<ul>
-					<li>ANC, Delivery and PNC visit schedule and data management</li>
-					<li>Automatic high risk identification</li>
-					<li>Automatic investigation advice recommendation and referral</li>
-				</ul>
-				<h4>Child growth and immunisation</h4>
-				<ul>
-					<li>Growth information tracking</li>
-					<li>Immunisation schedule management</li>
-					<li>WHO growth charts (height, weight and age based. Z-scores, Nutritional status)</li>
-				</ul>
-				<h4>Outpatient</h4>
-				<ul>
-					<li>Support for medication for 16 minor ailments</li>
-				</ul>
-               <h1>Reporting and dashboard platform</h1>
-               <ul>
-                   <li>Dashboard specific to health programs</li>
-                   <li>Support for drill-down, charts, progress indicator, pivot tables</li>
-               </ul>
-			</section>
-		</div>
-        <div align="center">
-            <p style="color:white;">Empowered by Social Alpha</p>
-            <div><img height="89" width="166" src="images/SocialAlphaLogo.png"></div>
-        </div>
-    </body>
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        <h1>Features</h1>
+        <h3>Flexible data model</h3>
+        <ul>
+            <li>Flexible longitudinal data management</li>
+            <li><i>Data types</i> - Text, Single Select, Multi-Select, Number, Geolocation, Image, Video, Date, DateTime, Time, Duration</li>
+            <li>Configurable Multi-layered location support (e.g. District, Block, Village)</li>
+        </ul>
+        <h3>Configurable forms</h3>
+        <ul>
+            <li>Multiple pages per form, and one or more questions per page</li>
+            <li>Skip logic</li>
+            <li>Calculated form fields - e.g. estimated date of delivery based on last menstrual period date</li>
+            <li>Take a photo or video recording while collecting data</li>
+            <li>Capture current geo-location</li>
+        </ul>
+        <h3>Data collection</h3>
+        <ul>
+            <li>Register individuals or other subject types</li>
+            <li>Enrol and exit individuals/subjects into programs</li>
+            <li>Link individuals via relationships (mother, daughter, etc)</li>
+            <li>Access entire record on device</li>
+            <li>Search Individuals or other Subject types</li>
+            <li>Algorithmic decision support - e.g. High risk pregnancy identification, referral conditions</li>
+        </ul>
+        <h3>On-field work management</h3>
+        <ul>
+            <li>Automated scheduling of encounter</li>
+            <li>Manage scheduled and overdue encounters and plan visits</li>
+            <li>Cancel a scheduled encounter</li>
+        </ul>
+        <h3>Device data</h3>
+        <ul>
+            <li>Entire catchment's data stored on the device</li>
+            <li>Data synchronised manually</li>
+        </ul>
+        <h3>Device data security and Login</h3>
+        <ul>
+            <li>Data protected on the device by login</li>
+            <li>Change password and reset the password from the device (SMS and Email support)</li>
+            <li>Powered by AWS Cognito</li>
+        </ul>
+        <h3>Reporting dashboard (using metabase)</h3>
+        <ul>
+            <li>Table, Chart and Geographical</li>
+            <li>Filters</li>
+            <li>Download data as Excel, CSV and JSON</li>
+            <li>Drill down (one level)</li>
+            <li>Email and Embed support</li>
+        </ul>
+        <h3>Others</h3>
+        <ul>
+            <li>Video library on device with telemetry for monitoring usage</li>
+        </ul>
+        <h3>Health specific</h3>
+        <ul>
+            <li>Immunisation schedule management (up to 5 years)</li>
+            <li>Child growth charts (WHO)</li>
+            <li>Inbuilt health modules for RCH (ANM and ASHA)</li>
+        </ul>
+
+        <br/>
+        <h1>Roadmap (with rough timelines, 2019)</h1>
+        <h3>Web interface</h3>
+        <ul>
+            <li>Self-management of users (March)</li>
+            <li>Catchment and location hierarchy management (May)</li>
+            <li>Data collection (May)</li>
+            <li>Privilege based access to data (July)</li>
+        </ul>
+        <h3>API</h3>
+        <ul>
+            <li>Get Individuals and other Subjects (September)</li>
+        </ul>
+    </section>
+</div>
+<div align="center">
+    <p style="color:white;">Empowered by Social Alpha</p>
+    <div><img height="89" width="166" src="images/SocialAlphaLogo.png" alt="Social Alpha"></div>
+</div>
+</body>
 </html>
