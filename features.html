@@ -7,6 +7,19 @@
     <meta name="description" content="List of features current present in OpenCHS and roadmap for significant new features to be added to the platform."/>
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="stylesheets/magnific-popup.css">
+
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="stylesheets/jquery.magnific-popup.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.screenshot-popup-link').magnificPopup({type: 'image'});
+        });
+    </script>
     <title>OpenCHS - Features</title>
 </head>
 <body>
@@ -24,39 +37,44 @@
         <ul>
             <li>Flexible longitudinal data management</li>
             <li><i>Data types</i> - Text, Single Select, Multi-Select, Number, Geolocation, Image, Video, Date, DateTime, Time, Duration</li>
-            <li>Configurable Multi-layered location support (e.g. District, Block, Village)</li>
+            <li>Configurable multi-level location support (e.g. District, Block, Village)</li>
         </ul>
         <h3>Configurable forms</h3>
         <ul>
             <li>Multiple pages per form, and one or more questions per page</li>
-            <li>Skip logic</li>
+            <li>Skip logic <a class="screenshot-popup-link" href="images/screenshots/skip-logic.gif">(Screenshot)</a></li>
             <li>Calculated form fields - e.g. estimated date of delivery based on last menstrual period date</li>
+            <li>Help tips (<a class="screenshot-popup-link" href="images/screenshots/couselling1.png">Screenshot1</a>, <a class="screenshot-popup-link"
+                                                                                                                          href="images/screenshots/couselling2.png">Screenshot2</a>)
+            </li>
             <li>Take a photo or video recording while collecting data</li>
             <li>Capture current geo-location</li>
         </ul>
         <h3>Data collection</h3>
         <ul>
-            <li>Register individuals or other subject types</li>
+            <li>Register individuals or other subject types <a class="screenshot-popup-link" href="images/screenshots/individual-registration.png">(Screenshot)</a></li>
             <li>Enrol and exit individuals/subjects into programs</li>
             <li>Link individuals via relationships (mother, daughter, etc)</li>
-            <li>Access entire record on device</li>
-            <li>Search Individuals or other Subject types</li>
-            <li>Algorithmic decision support - e.g. High risk pregnancy identification, referral conditions</li>
+            <li>Access entire record on device <a class="screenshot-popup-link" href="images/screenshots/individual-dashboard.png">(Screenshot)</a></li>
+            <li>Search Individuals or other Subject types <a class="screenshot-popup-link" href="images/screenshots/search.gif">(Screenshot)</a></li>
+            <li>Algorithmic decision support - e.g. High risk pregnancy identification, referral conditions <a class="screenshot-popup-link"
+                                                                                                               href="images/screenshots/decision-support.png">(Screenshot)</a>
+            </li>
         </ul>
         <h3>On-field work management</h3>
         <ul>
             <li>Automated scheduling of encounter</li>
-            <li>Manage scheduled and overdue encounters and plan visits</li>
+            <li>Manage scheduled and overdue encounters and plan visits <a class="screenshot-popup-link" href="images/screenshots/work-schedule.png">(Screenshot)</a></li>
             <li>Cancel a scheduled encounter</li>
         </ul>
         <h3>Device data</h3>
         <ul>
             <li>Entire catchment's data stored on the device</li>
-            <li>Data synchronised manually</li>
+            <li>Data synchronised manually <a class="screenshot-popup-link" href="images/screenshots/sync.png">(Screenshot)</a></li>
         </ul>
         <h3>Device data security and Login</h3>
         <ul>
-            <li>Data protected on the device by login</li>
+            <li>Data protected on the device by login <a class="screenshot-popup-link" href="images/screenshots/login.png">(Screenshot)</a></li>
             <li>Change password and reset the password from the device (SMS and Email support)</li>
             <li>Powered by AWS Cognito</li>
         </ul>
@@ -70,13 +88,13 @@
         </ul>
         <h3>Others</h3>
         <ul>
-            <li>Support for multiple languages</li>
+            <li>Support for multiple languages <a class="screenshot-popup-link" href="images/screenshots/multi-language.png">(Screenshot)</a></li>
             <li>Video library on device with telemetry for monitoring usage</li>
         </ul>
         <h3>Health specific</h3>
         <ul>
-            <li>Immunisation schedule management (up to 5 years)</li>
-            <li>Child growth charts (WHO)</li>
+            <li>Immunisation schedule management (up to 5 years) <a class="screenshot-popup-link" href="images/screenshots/immunisation.png">(Screenshot)</a></li>
+            <li>Child growth charts (WHO) <a class="screenshot-popup-link" href="images/screenshots/growth-chart.png">(Screenshot)</a></li>
             <li>Inbuilt health modules for RCH (ANM and ASHA)</li>
         </ul>
 
