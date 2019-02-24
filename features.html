@@ -7,6 +7,7 @@
     <meta name="description" content="List of features current present in OpenCHS and roadmap for significant new features to be added to the platform."/>
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/openchs.css">
     <!-- Magnific Popup core CSS file -->
     <link rel="stylesheet" href="stylesheets/magnific-popup.css">
 
@@ -18,6 +19,10 @@
     <script>
         $(document).ready(function () {
             $('.screenshot-popup-link').magnificPopup({type: 'image'});
+            $('.feature-item').magnificPopup({
+                type:'inline',
+                midClick: true
+            });
         });
     </script>
     <title>OpenCHS - Features</title>
@@ -69,15 +74,21 @@
         </ul>
         <h3>Device data</h3>
         <ul>
-            <li>Entire catchment's data stored on the device</li>
+            <li>Entire <a href="#catchment-explanation" class="feature-item">catchment</a>'s data stored on the device</li>
             <li>Data synchronised manually <a class="screenshot-popup-link" href="images/screenshots/sync.png">(Screenshot)</a></li>
         </ul>
+        <div id="catchment-explanation" class="mfp-hide white-popup">
+            <h3>About catchment</h3>
+            <p>Each individual (and other subjects) are registered to a location (e.g. village). The user can be assigned a group of locations (e.g. villages) or a group of higher level locations (e.g. gram panchayats). This forms the catchment of the user and all the individuals (or subjects) in those locations will be present offline on their device.</p>
+        </div>
+
         <h3>Device data security and Login</h3>
         <ul>
             <li>Data protected on the device by login <a class="screenshot-popup-link" href="images/screenshots/login.png">(Screenshot)</a></li>
             <li>Change password and reset the password from the device (SMS and Email support)</li>
             <li>Powered by AWS Cognito</li>
         </ul>
+
         <h3>Reporting dashboard (using metabase)</h3>
         <ul>
             <li>Table, Chart and Geographical</li>
@@ -88,9 +99,18 @@
         </ul>
         <h3>Others</h3>
         <ul>
-            <li>Support for multiple languages <a class="screenshot-popup-link" href="images/screenshots/multi-language.png">(Screenshot)</a></li>
-            <li>Video library on device with telemetry for monitoring usage</li>
+            <li>Support for multiple <a href="#language-with-translations" class="feature-item">languages</a>. <a class="screenshot-popup-link" href="images/screenshots/multi-language.png">(Screenshot)</a></li>
+            <li>Video library on device with <a href="#video-library" class="feature-item">telemetry</a> for monitoring usage</li>
         </ul>
+        <div id="language-with-translations" class="mfp-hide white-popup">
+            <h3>Translations available</h3>
+            <p>While the platform supports multiple languages, and adding translations is simple, currently the platform has been translated in Hindi, Marathi and Gujarati.</p>
+        </div>
+        <div id="video-library" class="mfp-hide white-popup">
+            <h3>About video library</h3>
+            <p>Multiple videos can be added for your implementations. All the information about how many times and how long the video has been played can be tracked.</p>
+        </div>
+
         <h3>Health specific</h3>
         <ul>
             <li>Immunisation schedule management (up to 5 years) <a class="screenshot-popup-link" href="images/screenshots/immunisation.png">(Screenshot)</a></li>
